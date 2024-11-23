@@ -1,17 +1,12 @@
 <script setup>
 import { RouterView } from 'vue-router';
+import Header from './components/Header.vue';
 </script>
 
 <template>
-  <header>
-    <h1>this is header</h1>
-  </header>
+  <Header />
 
   <RouterView />
 </template>
 
-<style scoped lang="scss">
-h1 {
-  color: $color-accent;
-}
-</style>
+<style scoped lang="scss"></style>
