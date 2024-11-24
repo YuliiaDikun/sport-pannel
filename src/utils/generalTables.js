@@ -1,9 +1,22 @@
+import ManCity from '../assets/logos/bavaria.webp';
+import Arsenal from '../assets/logos/arsenal.webp';
+import ManUni from '../assets/logos/man-uni.webp';
+import NewCastle from '../assets/logos/newcastle-uni.webp';
+import Liverpool from '../assets/logos/liverpool.webp';
+import Albion from '../assets/logos/albion.webp';
+import AstonVilla from '../assets/logos/aston-villa.webp';
+import Tottenham from '../assets/logos/tottenham.webp';
+import Brentford from '../assets/logos/brentford.webp';
+import Ffc from '../assets/logos/ffc.webp';
+import CrystalPalace from '../assets/logos/crystal-palace.webp';
+import Chelsea from '../assets/logos/chensea.webp';
+
 export const generalTables = {
   A: [
     {
       id: '1',
       name: 'Бавария',
-      logo: 'https://upload.wikimedia.org/wikipedia/ru/thumb/2/24/FC_Barcelona.svg/213px-FC_Barcelona.svg.png',
+      logo: ManCity,
       games: 6,
       wins: 4,
       draws: 1,
@@ -17,7 +30,7 @@ export const generalTables = {
     {
       id: '2',
       name: 'Копенгаген',
-      logo: 'https://upload.wikimedia.org/wikipedia/ru/thumb/2/24/FC_Barcelona.svg/213px-FC_Barcelona.svg.png',
+      logo: Arsenal,
       games: 6,
       wins: 2,
       draws: 3,
@@ -31,7 +44,7 @@ export const generalTables = {
     {
       id: '3',
       name: 'Галатасарай',
-      logo: 'https://upload.wikimedia.org/wikipedia/ru/thumb/2/24/FC_Barcelona.svg/213px-FC_Barcelona.svg.png',
+      logo: ManUni,
       games: 6,
       wins: 2,
       draws: 2,
@@ -45,7 +58,7 @@ export const generalTables = {
     {
       id: '4',
       name: 'Манчестер Юнайтед',
-      logo: 'https://upload.wikimedia.org/wikipedia/ru/thumb/2/24/FC_Barcelona.svg/213px-FC_Barcelona.svg.png',
+      logo: NewCastle,
       games: 6,
       wins: 0,
       draws: 2,
@@ -61,7 +74,7 @@ export const generalTables = {
     {
       id: '1',
       name: 'Арсенал',
-      logo: 'https://upload.wikimedia.org/wikipedia/ru/thumb/2/24/FC_Barcelona.svg/213px-FC_Barcelona.svg.png',
+      logo: Liverpool,
       games: 6,
       wins: 4,
       draws: 1,
@@ -75,7 +88,7 @@ export const generalTables = {
     {
       id: '2',
       name: 'ПСВ Эйндховен',
-      logo: 'https://upload.wikimedia.org/wikipedia/ru/thumb/2/24/FC_Barcelona.svg/213px-FC_Barcelona.svg.png',
+      logo: Albion,
       games: 6,
       wins: 2,
       draws: 3,
@@ -89,7 +102,7 @@ export const generalTables = {
     {
       id: '3',
       name: 'Ланс',
-      logo: 'https://upload.wikimedia.org/wikipedia/ru/thumb/2/24/FC_Barcelona.svg/213px-FC_Barcelona.svg.png',
+      logo: AstonVilla,
       games: 6,
       wins: 2,
       draws: 2,
@@ -103,7 +116,7 @@ export const generalTables = {
     {
       id: '4',
       name: 'Севилья',
-      logo: 'https://upload.wikimedia.org/wikipedia/ru/thumb/2/24/FC_Barcelona.svg/213px-FC_Barcelona.svg.png',
+      logo: Tottenham,
       games: 6,
       wins: 0,
       draws: 2,
@@ -119,7 +132,7 @@ export const generalTables = {
     {
       id: '1',
       name: 'Реал Мадрид',
-      logo: 'https://upload.wikimedia.org/wikipedia/ru/thumb/2/24/FC_Barcelona.svg/213px-FC_Barcelona.svg.png',
+      logo: Brentford,
       games: 6,
       wins: 6,
       draws: 0,
@@ -133,7 +146,7 @@ export const generalTables = {
     {
       id: '2',
       name: 'Наполи',
-      logo: 'https://upload.wikimedia.org/wikipedia/ru/thumb/2/24/FC_Barcelona.svg/213px-FC_Barcelona.svg.png',
+      logo: Ffc,
       games: 6,
       wins: 3,
       draws: 1,
@@ -147,7 +160,7 @@ export const generalTables = {
     {
       id: '3',
       name: 'Брага',
-      logo: 'https://upload.wikimedia.org/wikipedia/ru/thumb/2/24/FC_Barcelona.svg/213px-FC_Barcelona.svg.png',
+      logo: CrystalPalace,
       games: 6,
       wins: 2,
       draws: 2,
@@ -161,7 +174,7 @@ export const generalTables = {
     {
       id: '4',
       name: 'Унион Берлин',
-      logo: 'https://upload.wikimedia.org/wikipedia/ru/thumb/2/24/FC_Barcelona.svg/213px-FC_Barcelona.svg.png',
+      logo: Chelsea,
       games: 6,
       wins: 0,
       draws: 2,

@@ -15,9 +15,9 @@
       <p class="points">{{ points }}</p>
     </div>
 
-    <div v-for="club in tableElements" class="table-body">
+    <div v-for="(club, index) in tableElements" class="table-body">
       <div class="text-start">
-        <span class="position" :class="{ main: Number(club.id) < 3, last: Number(club.id) === 3 }">
+        <span class="position" :class="{ main: index + 1 < 3, last: index + 1 === 3 }">
           <span class="club-id">{{ club.id }}</span>
         </span>
         <img :src="club.logo" alt="club logo" class="logo" />

@@ -15,11 +15,13 @@
         </li>
       </ul>
     </div>
-    <Tables :data="tablesDataMap[activeTab]" :key="activeTab" />
+    <KeepAlive>
+      <Tables :data="tablesDataMap[activeTab]" :key="activeTab" />
+    </KeepAlive>
   </section>
 </template>
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, KeepAlive } from 'vue';
 import Tables from './Tables.vue';
 import { generalTables } from '../utils/generalTables';
 import { guestTables } from '../utils/guestTables';

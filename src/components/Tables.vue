@@ -1,6 +1,6 @@
 <template>
-  <template v-for="(key, value) in data">
-    <Table :title="value" :tableElements="key" />
+  <template v-for="(value, key) in data">
+    <Table :title="key" :tableElements="value" />
   </template>
 </template>
 <script setup>
