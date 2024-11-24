@@ -70,7 +70,6 @@ import IconShevron from './icons/IconShevron.vue';
     opacity: 38%;
   }
 }
-
 .desktop {
   display: none;
 }
@@ -80,11 +79,12 @@ import IconShevron from './icons/IconShevron.vue';
     display: flex;
     gap: 24px;
   }
-  .main-link {
-    margin-right: 8px;
-  }
+
   .mobile {
     display: none;
+  }
+  .main-link {
+    margin-right: 8px;
   }
   .navigation {
     padding: 16px 20px;

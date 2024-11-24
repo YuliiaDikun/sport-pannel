@@ -132,8 +132,10 @@ button {
 
 @media screen and (min-width: 1024px) {
   .desktop {
-    display: block;
+    display: flex;
+    gap: 24px;
   }
+
   .mobile {
     display: none;
   }
