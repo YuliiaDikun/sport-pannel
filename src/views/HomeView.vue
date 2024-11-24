@@ -7,6 +7,7 @@
     <div>
       <News />
       <Trends />
+      <Video />
     </div>
   </main>
 </template>
@@ -17,6 +18,7 @@ import Standings from '../components/Standings.vue';
 import SystemInfo from '../components/SystemInfo.vue';
 import News from '../components/News.vue';
 import Trends from '../components/Trends.vue';
+import Video from '../components/Video.vue';
 </script>
 <style scoped lang="scss">
 .main {
