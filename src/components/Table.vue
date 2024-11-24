@@ -15,11 +15,25 @@
       <p class="points">{{ points }}</p>
     </div>
 
-    <div v-for="(club, index) in tableElements" class="table-body">
+    <div v-for="(club, index) in tableElements" class="table-body" :key="club.name">
       <div class="text-start">
-        <span class="position" :class="{ main: index + 1 < 3, last: index + 1 === 3 }">
+        <span
+          @mouseenter="hoveredIndex = index"
+          @mouseleave="hoveredIndex = null"
+          class="position"
+          :class="{ main: index + 1 < 3, last: index + 1 === 3 }"
+        >
           <span class="club-id">{{ club.id }}</span>
+          <transition>
+            <div class="tultip-container" v-show="hoveredIndex === index">
+              <IconTultip class="icon" />
+              <div class="tultip">
+                <p>Лига чемпионов</p>
+              </div>
+            </div>
+          </transition>
         </span>
+
         <img :src="club.logo" alt="club logo" class="logo" />
         <p class="club-name">{{ club.name }}</p>
       </div>
@@ -45,14 +59,15 @@ import { useWidth } from '../composables/useWidth';
 import IconLose from './icons/IconLose.vue';
 import IconWin from './icons/IconWin.vue';
 import IconDraw from './icons/IconDraw.vue';
+import IconTultip from './icons/IconTultip.vue';
+
 const props = defineProps({
   title: String,
-
   tableElements: Array
 });
 
 const { width } = useWidth();
-
+const hoveredIndex = ref(null);
 const isMobile = ref(true);
 
 watch(width, () => {
@@ -78,7 +93,7 @@ const formMap = {
   border-left: 1px solid rgba($color-light-bg, 0.16);
   border-bottom: 1px solid rgba($color-light-bg, 0.16);
   border-radius: 8px;
-  overflow: hidden;
+
   & .table-header {
     display: flex;
     align-items: center;
@@ -111,6 +126,8 @@ const formMap = {
       align-items: center;
       justify-content: center;
       background: $color-bg;
+      position: relative;
+      cursor: pointer;
       &.main {
         background: $color-primary;
         & .club-id {
@@ -123,8 +140,27 @@ const formMap = {
           color: $color-bg;
         }
       }
+      & .tultip {
+        font-size: 12px;
+        line-height: calc(20px / 12px);
+        display: block;
+        width: max-content;
+        padding: 4px 8px;
+        background: #333333;
+        color: #ffffff;
+        border-radius: 2px;
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        z-index: 999;
+      }
+      & .icon {
+        position: absolute;
+        top: 18px;
+        left: 2px;
+        z-index: 999;
+      }
     }
-
     & .logo {
       width: 24px;
       height: 24px;
@@ -193,5 +229,16 @@ const formMap = {
   .points {
     width: 32px;
   }
+}
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.3s ease;
+  z-index: 999;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+  z-index: 999;
 }
 </style>
