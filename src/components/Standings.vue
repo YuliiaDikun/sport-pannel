@@ -68,7 +68,7 @@ const changeTab = (tab) => (activeTab.value = tab);
 <style scoped lang="scss">
 .section {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 10px;
 }
 .tab-top {
   margin: 0 12px 16px 12px;
