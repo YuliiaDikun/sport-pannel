@@ -99,6 +99,8 @@ const formMap = {
     align-items: center;
     justify-content: space-between;
     background: $color-dark-bg;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     padding: 4px 12px;
     color: $color-bg;
     font-weight: bold;

@@ -164,6 +164,7 @@ const UEFAText = computed(() =>
     align-items: start;
     justify-content: start;
     gap: 40px;
+    margin-left: 32px;
     & .alias-title {
       text-align: center;
     }

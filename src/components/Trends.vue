@@ -40,6 +40,7 @@ import IconLight from '../components/icons/IconLight.vue';
 .title {
   font-weight: bold;
   font-size: 18px;
+  margin-bottom: 16px;
 }
 .trend-container {
   display: flex;
@@ -62,6 +63,12 @@ import IconLight from '../components/icons/IconLight.vue';
   & .trend-text {
     font-size: 14px;
     color: rgba($color-text, 0.7);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 </style>

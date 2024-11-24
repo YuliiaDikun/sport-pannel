@@ -49,6 +49,7 @@ import IconComments from '../components/icons/IconComments.vue';
   overflow: hidden;
   min-height: 202px;
   width: 100%;
+  max-width: 380px;
   height: auto;
   border-radius: 4px;
   & img {
@@ -118,6 +119,15 @@ import IconComments from '../components/icons/IconComments.vue';
       & .icon {
         fill: rgba($color-bg, 0.5);
       }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section {
+    margin-left: 0px;
+    margin-right: 0px;
+    & .video-bottom {
+      bottom: 30px;
     }
   }
 }

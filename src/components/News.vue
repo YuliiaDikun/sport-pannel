@@ -80,4 +80,11 @@ import IconArrow from './icons/IconArrow.vue';
     }
   }
 }
+@media screen and (min-width: 1024px) {
+  .section {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 24px;
+  }
+}
 </style>

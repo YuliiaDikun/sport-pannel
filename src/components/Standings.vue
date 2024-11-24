@@ -109,8 +109,13 @@ const changeTab = (tab) => (activeTab.value = tab);
   }
 }
 @media screen and (min-width: 1024px) {
+  .section {
+    margin-left: 20px;
+    padding-top: 0;
+    padding-bottom: 18px;
+  }
   .tab-top {
-    margin: 0 20px 12px 20px;
+    margin: 0 20px 12px 0px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
