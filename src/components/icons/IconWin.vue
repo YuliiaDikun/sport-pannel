@@ -1,9 +1,10 @@
 <!-- This icon is from <https://github.com/Templarian/MaterialDesign>, distributed under Apache 2.0 (https://www.apache.org/licenses/LICENSE-2.0) license-->
 <template>
-  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="18" height="18" rx="2" fill="#00B16D" />
     <path
-      d="M6.40313 9.76047L4.32313 7.68047L3.20312 8.80047L6.40313 12.0005L12.8031 5.60047L11.6831 4.48047L6.40313 9.76047Z"
-      fill="currentColor"
+      d="M7.40313 10.7605L5.32313 8.68047L4.20312 9.80047L7.40313 13.0005L13.8031 6.60047L12.6831 5.48047L7.40313 10.7605Z"
+      fill="white"
     />
   </svg>
 </template>
