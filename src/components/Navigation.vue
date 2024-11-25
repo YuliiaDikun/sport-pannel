@@ -54,20 +54,17 @@ import IconShevron from './icons/IconShevron.vue';
   }
   & .secondary-link {
     font-size: 12px;
-    color: $color-text;
-    opacity: 70%;
+    color: rgba($color-text, 0.7);
     &.large {
       font-size: 14px;
     }
   }
   & .icon {
-    fill: $color-text;
-    opacity: 38%;
+    fill: rgba($color-text, 0.38);
   }
   & .link {
     font-size: 12px;
-    color: $color-text;
-    opacity: 38%;
+    color: rgba($color-text, 0.38);
   }
 }
 .desktop {

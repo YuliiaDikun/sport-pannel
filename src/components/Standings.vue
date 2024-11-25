@@ -67,34 +67,36 @@ const changeTab = (tab) => (activeTab.value = tab);
 </script>
 <style scoped lang="scss">
 .section {
-  padding-top: 32px;
-  padding-bottom: 10px;
+  padding-top: 24px;
+  padding-bottom: 11px;
 }
 .tab-top {
-  margin: 0 12px 16px 12px;
+  margin: 0 12px 16px 0px;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  gap: 9px;
+  gap: 12px;
   & .tab-title {
     font-weight: bold;
     font-size: 18px;
     line-height: calc(24px / 18px);
+    margin-bottom: 4px;
   }
   .tab-container {
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 6px;
+    margin-left: 12px;
     & .tab-button {
       width: auto;
-      padding: 4px 12px;
+      padding: 4px 13px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 14px;
-      line-height: calc(24px / 14px);
+      line-height: calc(25px / 14px);
       color: rgba($color-text, 0.54);
       background-color: rgba($color-light-bg, 0.08);
       border-radius: 6px;

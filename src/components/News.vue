@@ -46,17 +46,17 @@ import IconArrow from './icons/IconArrow.vue';
 </script>
 <style scoped lang="scss">
 .section {
-  padding-top: 32px;
-  padding-bottom: 40px;
+  padding-top: 17px;
+  padding-bottom: 35px;
   margin: 0 12px;
   & .title {
     font-weight: bold;
     font-size: 18px;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
   }
   & .news-item {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border-top: 1px solid $color-border;
     &:last-of-type {
       border-bottom: 1px solid $color-border;
@@ -68,6 +68,7 @@ import IconArrow from './icons/IconArrow.vue';
       gap: 12px;
     }
     & .news-icon {
+      margin-left: 3px;
       margin-top: 4px;
       flex-shrink: 0;
       fill: rgba($color-text, 0.38);
@@ -75,7 +76,7 @@ import IconArrow from './icons/IconArrow.vue';
     & .news-title {
       font-weight: 500;
       font-size: 16px;
-      line-height: calc(22px / 16px);
+      line-height: 1.4;
       color: rgba($color-text, 0.8);
     }
   }

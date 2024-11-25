@@ -35,12 +35,12 @@ import IconLight from '../components/icons/IconLight.vue';
 <style scoped lang="scss">
 .section {
   margin: 0 12px;
-  padding-bottom: 40px;
+  padding-bottom: 36px;
 }
 .title {
   font-weight: bold;
   font-size: 18px;
-  margin-bottom: 16px;
+  margin-bottom: 11px;
 }
 .trend-container {
   display: flex;
@@ -52,8 +52,8 @@ import IconLight from '../components/icons/IconLight.vue';
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 8px;
-    padding: 9px 12px;
+    gap: 6px;
+    padding: 9px 12px 7px 12px;
     background: rgba($color-text, 0.05);
     border-radius: 16px;
   }

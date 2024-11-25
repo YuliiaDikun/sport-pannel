@@ -85,7 +85,7 @@ const formMap = {
 
 <style scoped lang="scss">
 .footboll-table {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   width: 100%;
   background-color: $color-bg;
   border-top: 1px solid transparent;
@@ -99,9 +99,9 @@ const formMap = {
     align-items: center;
     justify-content: space-between;
     background: $color-dark-bg;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    padding: 4px 12px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 4px 9px;
     color: $color-bg;
     font-weight: bold;
     font-size: 12px;
@@ -111,7 +111,7 @@ const formMap = {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4px 12px;
+    padding: 7px 10px 6px 3px;
     font-size: 14px;
     line-height: calc(24px / 14px);
     text-align: center;
@@ -147,19 +147,19 @@ const formMap = {
         line-height: calc(20px / 12px);
         display: block;
         width: max-content;
-        padding: 4px 8px;
+        padding: 4px 9px;
         background: #333333;
         color: #ffffff;
         border-radius: 2px;
         position: absolute;
-        bottom: -30px;
-        left: 0;
+        bottom: -37px;
+        left: -1px;
         z-index: 999;
       }
       & .icon {
         position: absolute;
-        top: 18px;
-        left: 2px;
+        top: 24px;
+        left: 1px;
         z-index: 999;
       }
     }
@@ -171,12 +171,13 @@ const formMap = {
 }
 
 .text-start {
+  margin-left: 4px;
   display: flex;
   align-items: center;
   justify-content: start;
   text-align: start;
   gap: 6px;
-  width: 46%;
+  width: 48%;
   font-size: 12px;
   line-height: calc(20px / 12px);
 }

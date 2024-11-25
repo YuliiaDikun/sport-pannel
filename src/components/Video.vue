@@ -35,7 +35,7 @@ import IconComments from '../components/icons/IconComments.vue';
   align-items: center;
   justify-content: start;
   gap: 7px;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
   & span {
     font-weight: bold;
     font-size: 18px;
@@ -62,7 +62,7 @@ import IconComments from '../components/icons/IconComments.vue';
     font-size: 12px;
     line-height: 92.4%;
     display: inline-block;
-    padding: 4px 10px;
+    padding: 4px 7px;
     background: $color-theme;
     color: $color-bg;
     border-radius: 2px;
@@ -79,8 +79,8 @@ import IconComments from '../components/icons/IconComments.vue';
     background: rgba($color-text, 0.54);
     border-radius: 100%;
     position: absolute;
-    top: 12px;
-    right: 12px;
+    top: 10px;
+    right: 11px;
     & .icon {
       fill: none;
       width: 18px;
@@ -91,11 +91,11 @@ import IconComments from '../components/icons/IconComments.vue';
   }
   & .video-title {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15px;
     line-height: calc(20px / 16px);
     color: $color-bg;
     position: absolute;
-    bottom: 25%;
+    bottom: 22%;
     left: 12px;
   }
   & .video-bottom {

@@ -7,7 +7,7 @@
       <div class="top">
         <img class="mobile-image mobile" src="../assets/logos/upl.webp" alt="upl logo" />
         <div>
-          <h2 class="title">Украинская Премьер-Лига</h2>
+          <h1 class="title">Украинская Премьер-Лига</h1>
           <p class="subtitle">Сезон 2019/2020 32-й тур</p>
         </div>
       </div>
@@ -15,7 +15,7 @@
         <li v-for="link in arrayOfLinks" :key="link.id">
           <p
             @click="changeTab(link.id)"
-            class="link"
+            class="link nav-text"
             :class="{ active: activeTab === link.id, desktop: desktopLinks.includes(link.id) }"
           >
             {{ link.title }}
@@ -87,6 +87,7 @@ const changeTab = (tab) => {
       object-fit: contain;
     }
     & .title {
+      padding-top: 6px;
       font-size: 18px;
       font-weight: 500;
       line-height: calc(20px / 18px);
@@ -95,8 +96,7 @@ const changeTab = (tab) => {
     }
     & .subtitle {
       font-size: 12px;
-      color: $color-text;
-      opacity: 38%;
+      color: rgba($color-text, 0.38);
     }
   }
   .upl-navigation {
