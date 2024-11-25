@@ -117,7 +117,7 @@ const changeTab = (tab) => (activeTab.value = tab);
     padding-bottom: 18px;
   }
   .tab-top {
-    margin: 0 20px 12px 0px;
+    margin: 0 20px 7px 0px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;

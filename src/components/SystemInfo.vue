@@ -188,13 +188,18 @@ const UEFAText = computed(() =>
     justify-content: start;
     gap: 40px;
     margin-left: 32px;
-    & .alias-title {
-      text-align: center;
-    }
-    & .alias-container {
-      justify-content: start;
-      & .alias-side {
-        width: 100%;
+    & .block {
+      & .alias-title {
+        text-align: center;
+      }
+      & .alias-container {
+        justify-content: start;
+        & .alias-side {
+          width: 100%;
+          & .row {
+            justify-content: start;
+          }
+        }
       }
     }
   }

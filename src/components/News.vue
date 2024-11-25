@@ -86,6 +86,7 @@ import IconArrow from './icons/IconArrow.vue';
     margin-left: 0px;
     margin-right: 0px;
     padding-top: 24px;
+    padding-bottom: 42px;
   }
 }
 </style>

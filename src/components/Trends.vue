@@ -69,6 +69,7 @@ import IconLight from '../components/icons/IconLight.vue';
   .section {
     margin-left: 0px;
     margin-right: 0px;
+    padding-bottom: 39px;
   }
 }
 </style>

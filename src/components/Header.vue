@@ -139,5 +139,8 @@ button {
   .mobile {
     display: none;
   }
+  .mobile-icon_button {
+    width: 42px;
+  }
 }
 </style>

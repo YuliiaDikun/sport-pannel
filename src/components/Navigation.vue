@@ -2,7 +2,7 @@
   <nav class="navigation desktop">
     <a href="#" aria-label="посилання на загальну сторінку про футбол" class="main-link">
       <IconBoll class="icon" />
-      <p>ФУТБОЛ</p>
+      <p class="title">ФУТБОЛ</p>
     </a>
     <a href="#" aria-label="посилання на загальну сторінку про медалі" class="secondary-link large"
       >Зачет медалей</a
@@ -80,12 +80,18 @@ import IconShevron from './icons/IconShevron.vue';
   .mobile {
     display: none;
   }
-  .main-link {
-    margin-right: 8px;
-  }
+
   .navigation {
-    padding: 16px 20px;
+    padding: 15px 20px;
     border-bottom: 1px solid $color-border;
+    & .main-link {
+      margin-right: 8px;
+      gap: 4px;
+    }
+  }
+
+  .title {
+    font-size: 14px;
   }
 }
 </style>

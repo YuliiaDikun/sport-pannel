@@ -219,18 +219,37 @@ const formMap = {
   gap: 1px;
 }
 @media screen and (min-width: 1024px) {
-  .games {
-    width: 32px;
-    text-align: center;
-  }
-  .score-container {
-    width: 80px;
-  }
-  .correlation-container {
-    width: 52px;
-  }
-  .points {
-    width: 32px;
+  .footboll-table {
+    & .table-header {
+      padding-right: 19px;
+    }
+    .table-body {
+      padding-right: 19px;
+      & .position {
+        width: 24px;
+        height: 24px;
+      }
+      & .text-start {
+        gap: 12px;
+      }
+      .games {
+        width: 32px;
+        text-align: center;
+      }
+      .score-container {
+        width: 80px;
+        & .score {
+          text-align: left;
+        }
+      }
+      .correlation-container {
+        width: 52px;
+        justify-content: start;
+      }
+      .points {
+        width: 32px;
+      }
+    }
   }
 }
 .v-enter-active,
